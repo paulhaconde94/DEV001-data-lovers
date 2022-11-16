@@ -3,10 +3,10 @@
 ## Índice
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
-* [2. Prototipo de baja fidelidad (#2-Prototipo-de-baja-fidelidad)
-* [3. Prototipos de alta fidelidad (#3-Prototipo-de-alta-fidelidad)
-* [4. Historias de usuario (#4-Historias-de-usuario)
-* [5. Consideraciones finales (#5-Consideraciones-finales)
+* [2. Prototipo de baja fidelidad (#2-prototipo-de-baja-fidelidad)
+* [3. Prototipos de alta fidelidad (#3-prototipo-de-alta-fidelidad)
+* [4. Historias de usuario (#4-historias-de-usuario)
+* [5. Consideraciones finales (#5-consideraciones-finales)
 
 ***
 
