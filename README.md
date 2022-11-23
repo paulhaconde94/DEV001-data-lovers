@@ -39,9 +39,9 @@ Segunda pantalla:
 
 ## 5. Consideraciones Finales 
 
- * [ ] Tiene una interfaz que cumple los criterios mínimos con al menos 3 Historias de Usuario.
- * [ ] El proyecto será entregado incluyendo pruebas unitarias que cubren un mínimo del 70% de statements, functions, lines y branches (fijate en las funciones de filtrar, ordenar etc la data).
- * [ ] El proyecto será entregado libre de errores de eslint (los warnings están ok).
- * [ ] El proyecto será entregado subiendo tu código a GitHub.
- * [ ] La interfaz será "desplegada" usando GitHub Pages.
- * [ ] El README contiene una definición del producto e Historias de Usuario.
+ * [x] Tiene una interfaz que cumple los criterios mínimos con al menos 3 Historias de Usuario.
+ * [x] El proyecto será entregado incluyendo pruebas unitarias que cubren un mínimo del 70% de statements, functions, lines y branches (fijate en las funciones de filtrar, ordenar etc la data).
+ * [x] El proyecto será entregado libre de errores de eslint (los warnings están ok).
+ * [x] El proyecto será entregado subiendo tu código a GitHub.
+ * [x] La interfaz será "desplegada" usando GitHub Pages.
+ * [x] El README contiene una definición del producto e Historias de Usuario.
