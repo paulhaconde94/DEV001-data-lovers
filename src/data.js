@@ -30,3 +30,14 @@ export const filterGender = (dataGhibli,generoPersonaje) => {
   })
   return personajesFiltrados;
 }
+
+//Filter estreno(año) de pelicula
+export const filterAño = (dataGhibli,añoPelicula) => {
+  const estrenosFiltrado = dataGhibli.filter((pelicula) => {
+    return pelicula.release_date == añoPelicula
+  });
+ 
+  return estrenosFiltrado;
+}
+
+

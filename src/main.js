@@ -1,7 +1,44 @@
 import objetoghibli from './data/ghibli/ghibli.js'; /*libera nuestra data*/
-import {filterDirector, sortPelis, filterGender} from './data.js';
+import {filterDirector, sortPelis, filterGender,filterAño} from './data.js';
 // eslint-disable-next-line no-console
 //console.log(objetoghibli);
+
+
+//Funcion para mostrar estreno(año) de la pelicula 
+let showPremiere = function (año){
+  let newHtml = ""
+  año.forEach(function(film,index){
+
+    let templatePelicula =`
+    <div class="cardPrincipal">
+      <img src="${film.poster}" alt="img">
+      ${film.title}
+      <button class= "showMore" data-film-id="${index}">Show More</button>
+      <div class="modal" id="modal-film-${index}">
+        <div class= "modal-content">
+          <span class="close-button" data-film-id="${index}">&times;</span>
+          <p>Producer:${film.producer}</p>
+          <p>Director: ${film.director}</p>
+          <p>Release Date: ${film.release_date}</p>
+        </div>
+      </div>
+    </div>`;
+   newHtml+= templatePelicula;
+});
+document.getElementById("root").innerHTML = newHtml;
+
+  const showMore = document.getElementsByClassName("showMore");
+  const closeButton = document.getElementsByClassName("close-button");
+
+  for(let i=0 ;i < showMore.length ; i++) {
+    showMore[i].addEventListener("click", toggleModal);
+  }
+  for(let i=0 ; i < closeButton.length ; i++) {
+    closeButton[i].addEventListener("click",toggleModal);
+  }
+  }
+  
+//Funcion para mostrar personajes
 
 let showPersonaje = function(personas){
   let newHtml= ""
@@ -108,6 +145,20 @@ filterSelect2.addEventListener("change", () =>{
   
   showPersonaje (filterGender(objetoghibli.films, filterSelect2.value));
 });
+
+/*Filtrado por estreno(año) de la pelicula*/
+
+const filterselectorAño = document.getElementById("filter-año");
+
+filterselectorAño.addEventListener("change", ()=>{
+
+
+  showPremiere(filterAño(objetoghibli.films,filterselectorAño.value));
+
+});
+
+
+
 
 
 
