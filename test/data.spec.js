@@ -1,4 +1,4 @@
-import { sortPelis , filterDirector, filterGender } from '../src/data.js';
+import { sortPelis , filterDirector, filterGender, filterAño } from '../src/data.js';
 
 let sortData = [
 {
@@ -128,6 +128,42 @@ describe ("filterGender",()=>{
     expect(filterGender(filtradoGender, "Male")).toEqual(maleGender);
   })
 });
+
+//test filter estreno(Año)
+let filtradosAño = [
+  {
+    title: "Castle in The Sky",
+    release_date: "1986",
+  },
+  {
+    title:"When Marnie Was There",
+    release_date: "2014",
+  }, 
+  {
+    title:"Kiki's Delivery Service",
+    director: "1989",
+  },
+];
+
+let premiere = [
+  {
+    title: "Castle in The Sky",
+    release_date: "1986",
+  },
+
+];
+
+describe ("filterAño" ,()=>{
+it ("Es una funcion", ()=>{
+  expect (typeof filterAño).toBe("function");
+});
+
+it ("retorna un array solo con los años de las peliculas",() => {
+  expect(filterAño(filtradosAño,"1986")).toEqual(premiere);
+ });
+
+});
+
 
 
 
